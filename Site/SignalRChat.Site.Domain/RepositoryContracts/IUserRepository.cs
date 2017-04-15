@@ -7,5 +7,6 @@ namespace SignalRChat.Site.Domain.RepositoryContracts
     {
         User GetById(int id);
         IEnumerable<User> GetAll();
+        void Insert(User user);
     }
 }

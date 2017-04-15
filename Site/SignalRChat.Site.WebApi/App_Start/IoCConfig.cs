@@ -6,6 +6,8 @@ using Autofac.Extras.CommonServiceLocator;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.SignalR;
 using Microsoft.Practices.ServiceLocation;
+using SignalRChat.Site.WebApi.Mappers.Contracts;
+using SignalRChat.Site.WebApi.Mappers.Implementations;
 using AutofacDependencyResolver = Autofac.Integration.Mvc.AutofacDependencyResolver;
 
 namespace SignalRChat.Site.WebApi.App_Start
@@ -31,9 +33,16 @@ namespace SignalRChat.Site.WebApi.App_Start
                 builder.RegisterModule(module);
             }
 
+            RegisterSelfTypes(builder);
+
             var container = builder.Build();
             SetDependencyResolver(container);
             return container;
+        }
+
+        private static void RegisterSelfTypes(ContainerBuilder builder)
+        {
+            builder.RegisterType<UserRequestMapper>().As<IUserRequestMapper>();
         }
 
         private static void RegisterControllers(ContainerBuilder builder)

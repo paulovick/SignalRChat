@@ -4,3 +4,6 @@
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Debug\Autofac.xml
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\obj\Debug\SignalRChat.Utilities.dll
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\obj\Debug\SignalRChat.Utilities.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Debug\Newtonsoft.Json.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Debug\Newtonsoft.Json.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\obj\Debug\SignalRChat.Utilities.csprojResolveAssemblyReference.cache

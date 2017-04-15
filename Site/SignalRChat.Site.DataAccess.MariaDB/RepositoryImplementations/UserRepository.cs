@@ -54,5 +54,25 @@ namespace SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations
             }
             return result;
         }
+
+        public void Insert(User user)
+        {
+            try
+            {
+                this.OpenConnection();
+
+                var query = "INSERT INTO User(Email, Username, Password, CreatedAt, LastModifiedAt) VALUES (" +
+                            $"{user.Email}, {user.Username}, {user.Password}, {user.CreatedAd}, {user.LastModifiedAt});";
+                this.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Couldn't create user.", ex);
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+        }
     }
 }

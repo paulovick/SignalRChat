@@ -2,3 +2,4 @@
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.ErrorControl\bin\Debug\SignalRChat.ErrorControl.pdb
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.ErrorControl\obj\Debug\SignalRChat.ErrorControl.dll
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.ErrorControl\obj\Debug\SignalRChat.ErrorControl.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.ErrorControl\obj\Debug\SignalRChat.ErrorControl.csprojResolveAssemblyReference.cache

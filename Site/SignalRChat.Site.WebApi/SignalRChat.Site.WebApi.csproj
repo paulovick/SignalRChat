@@ -169,7 +169,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IoCConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\Api\LoginApiController.cs" />
+    <Compile Include="Controllers\Api\LoginManagerController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ChatController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -179,6 +179,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hubs\ChatHub.cs" />
+    <Compile Include="Mappers\Contracts\IUserRequestMapper.cs" />
+    <Compile Include="Mappers\Implementations\UserRequestMapper.cs" />
     <Compile Include="Models\ChatModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
@@ -201,6 +203,7 @@
     <Content Include="Scripts\app\signalrchat-class-cookieManager.js" />
     <Content Include="Scripts\app\signalrchat-class-login.js" />
     <Content Include="Scripts\app\signalrchat-class-chathub.js" />
+    <Content Include="Scripts\app\signalrchat-class-register.js" />
     <Content Include="Scripts\app\signalrchat-init.js" />
     <Content Include="Scripts\app\signalrchat-util.js" />
     <Content Include="Scripts\bootstrap.js" />

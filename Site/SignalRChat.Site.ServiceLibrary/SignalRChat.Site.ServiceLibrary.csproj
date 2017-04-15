@@ -45,7 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dtos\MessageDto.cs" />
+    <Compile Include="Dtos\UserCreationDto.cs" />
     <Compile Include="IoC\IoCModule.cs" />
+    <Compile Include="Mappers\Contracts\IUserMapper.cs" />
+    <Compile Include="Mappers\Implementations\UserMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Responses\ChatResponse.cs" />
     <Compile Include="Services\Contracts\IChatService.cs" />
@@ -70,6 +73,7 @@
       <Name>SignalRChat.Site.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

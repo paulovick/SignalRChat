@@ -3,6 +3,7 @@
 /// <reference path="app/signalrchat-class-chathub.js" />
 /// <reference path="app/signalrchat-class-cookiemanager.js" />
 /// <reference path="app/signalrchat-class-login.js" />
+/// <reference path="app/signalrchat-class-register.js" />
 /// <reference path="app/signalrchat-init.js" />
 /// <reference path="app/signalrchat-util.js" />
 /// <reference path="bootstrap.js" />

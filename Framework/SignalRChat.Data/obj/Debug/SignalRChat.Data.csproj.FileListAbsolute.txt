@@ -2,3 +2,4 @@
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\bin\Debug\SignalRChat.Data.pdb
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\obj\Debug\SignalRChat.Data.dll
 \\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\obj\Debug\SignalRChat.Data.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\obj\Debug\SignalRChat.Data.csprojResolveAssemblyReference.cache

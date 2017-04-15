@@ -5,6 +5,7 @@ using SignalRChat.ErrorControl.Utilities;
 using SignalRChat.Site.Domain.Entities;
 using SignalRChat.Site.ServiceLibrary.Services.Contracts;
 using SignalRChat.Site.WebApi.Custom.Filters.Authorization;
+using SignalRChat.Site.WebApi.Mappers.Contracts;
 using SignalRChat.Site.WebApi.Models.Requests;
 using SignalRChat.Site.WebApi.Models.Responses;
 using SignalRChat.Utilities.Criptography;
@@ -12,15 +13,19 @@ using SignalRChat.Utilities.Criptography;
 namespace SignalRChat.Site.WebApi.Controllers.Api
 {
     [RoutePrefix("api/loginManager")]
-    public class LoginApiController : Controller
+    public class LoginManagerController : Controller
     {
         private readonly IStringCipher iStringCipher;
         private readonly IUserService iUserService;
+        private readonly IUserRequestMapper iUserRequestMapper;
 
-        public LoginApiController(IStringCipher iStringCipher, IUserService iUserService)
+        public LoginManagerController(IStringCipher iStringCipher,
+                                        IUserService iUserService,
+                                        IUserRequestMapper iUserRequestMapper)
         {
             this.iStringCipher = Guard.ArgumentNotNullAndReturn(iStringCipher, "iStringCipher");
             this.iUserService = Guard.ArgumentNotNullAndReturn(iUserService, "iUserService");
+            this.iUserRequestMapper = Guard.ArgumentNotNullAndReturn(iUserRequestMapper, "iUserRequestMapper");
         }
 
         [HttpPost]
@@ -33,6 +38,17 @@ namespace SignalRChat.Site.WebApi.Controllers.Api
                 return new HttpUnauthorizedResult();
             }
 
+            var expirationDays = 14;
+            var response = this.GetResponse(user, expirationDays);
+            return Json(response);
+        }
+
+        [HttpPost]
+        [Route("register")]
+        public ActionResult Register(UserRegisterRequest request)
+        {
+            var userDto = this.iUserRequestMapper.Convert(request);
+            var user = this.iUserService.Create(userDto);
             var expirationDays = 14;
             var response = this.GetResponse(user, expirationDays);
             return Json(response);

@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using SignalRChat.Utilities.Criptography;
+using SignalRChat.Utilities.Session.Services;
 
 namespace SignalRChat.Utilities.IoC
 {
@@ -8,6 +9,7 @@ namespace SignalRChat.Utilities.IoC
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<StringCipher>().As<IStringCipher>();
+            builder.RegisterType<SessionManager>().As<ISessionManager>();
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Newtonsoft.Json;
 using SignalRChat.ErrorControl.Utilities;
@@ -9,6 +8,7 @@ using SignalRChat.Site.ServiceLibrary.Services.Contracts;
 using SignalRChat.Site.WebApi.Custom.Filters.Authorization;
 using SignalRChat.Site.WebApi.Models;
 using SignalRChat.Site.WebApi.Models.Responses;
+using SignalRChat.Utilities.Session.Services;
 
 namespace SignalRChat.Site.WebApi.Controllers
 {
@@ -18,11 +18,15 @@ namespace SignalRChat.Site.WebApi.Controllers
     {
         private readonly IChatService iChatService;
         private readonly IUserService iUserService;
+        private readonly ISessionManager iSessionManager;
 
-        public ChatController(IChatService iChatService, IUserService iUserService)
+        public ChatController(IChatService iChatService,
+                                IUserService iUserService,
+                                ISessionManager iSessionManager)
         {
             this.iChatService = Guard.ArgumentNotNullAndReturn(iChatService, "iChatService");
             this.iUserService = Guard.ArgumentNotNullAndReturn(iUserService, "iUserService");
+            this.iSessionManager = Guard.ArgumentNotNullAndReturn(iSessionManager, "iSessionManager");
         }
 
         [Route("{receiverId}")]
@@ -35,14 +39,8 @@ namespace SignalRChat.Site.WebApi.Controllers
 
         private int GetUserId()
         {
-            var loggedUserCookie = HttpContext.Request.Cookies.Get("loggedUser");
-            if (loggedUserCookie == null)
-            {
-                throw new Exception("Unexisting loggedUser cookie");
-            }
-            var decodedUserCookie = Uri.UnescapeDataString(loggedUserCookie.Value);
-            var loggedUser = JsonConvert.DeserializeObject<User>(decodedUserCookie);
-            return loggedUser.Id;
+            var sessionUser = this.iSessionManager.GetSessionUserInfo(this.HttpContext);
+            return sessionUser.Id;
         }
 
         private ChatModel GetModel(int senderId, int receiverId)

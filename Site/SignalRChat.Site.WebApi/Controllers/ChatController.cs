@@ -33,7 +33,17 @@ namespace SignalRChat.Site.WebApi.Controllers
         public ActionResult Index(int receiverId)
         {
             var senderId = this.GetUserId();
+            if (senderId == receiverId)
+            {
+                return View("NotFound");
+            }
+
             var model = this.GetModel(senderId, receiverId);
+            if (model == null)
+            {
+                return View("NotFound");
+            }
+
             return View(model);
         }
 
@@ -45,17 +55,25 @@ namespace SignalRChat.Site.WebApi.Controllers
 
         private ChatModel GetModel(int senderId, int receiverId)
         {
-            var chat = this.iChatService.GetOrCreateChat(senderId, receiverId);
-            var sender = this.iUserService.GetById(senderId);
-            var receiver = this.iUserService.GetById(receiverId);
-
-            var result = new ChatModel
+            var result = default(ChatModel);
+            try
             {
-                Chat = chat.Chat,
-                Sender = sender,
-                Receiver = receiver,
-                Messages = chat.Messages.Select(x => this.ConvertMessage(x, sender, receiver))
-            };
+                var chat = this.iChatService.GetOrCreateChat(senderId, receiverId);
+                var sender = this.iUserService.GetById(senderId);
+                var receiver = this.iUserService.GetById(receiverId);
+
+                result = new ChatModel
+                {
+                    Chat = chat.Chat,
+                    Sender = sender,
+                    Receiver = receiver,
+                    Messages = chat.Messages.Select(x => this.ConvertMessage(x, sender, receiver))
+                };
+            }
+            catch (Exception)
+            {
+                return null;
+            }
             return result;
         }
 

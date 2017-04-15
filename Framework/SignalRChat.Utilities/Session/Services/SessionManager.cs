@@ -14,8 +14,8 @@ namespace SignalRChat.Utilities.Session.Services
             {
                 throw new Exception("Unexisting loggedUser cookie");
             }
-            var decodedUserCookie = Uri.UnescapeDataString(loggedUserCookie.Value);
-            var result = JsonConvert.DeserializeObject<SessionUser>(decodedUserCookie);
+            var scapedUserCookie = Uri.UnescapeDataString(loggedUserCookie.Value);
+            var result = JsonConvert.DeserializeObject<SessionUser>(scapedUserCookie);
             return result;
         }
     }

@@ -1,4 +1,5 @@
-﻿using SignalRChat.Site.Domain.Entities;
+﻿using System.Collections.Generic;
+using SignalRChat.Site.Domain.Entities;
 
 namespace SignalRChat.Site.ServiceLibrary.Services.Contracts
 {
@@ -6,5 +7,6 @@ namespace SignalRChat.Site.ServiceLibrary.Services.Contracts
     {
         User GetById(int senderId);
         User GetByUsername(string username);
+        IEnumerable<User> GetAll();
     }
 }

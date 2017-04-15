@@ -20,12 +20,33 @@ namespace SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations
             {
                 this.OpenConnection();
 
-                var query = $"SELECT * FROM User WHERE Id = {id}";
+                var query = $"SELECT * FROM User WHERE Id = {id};";
                 result = this.ExecuteSingleQuery(query);
             }
             catch (Exception ex)
             {
                 throw new Exception($"Couldn't retrieve user with id {id}", ex);
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+            return result;
+        }
+
+        public IEnumerable<User> GetAll()
+        {
+            IEnumerable<User> result = new List<User>();
+            try
+            {
+                this.OpenConnection();
+
+                var query = "SELECT * FROM User;";
+                result = this.ExecuteMultipleQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Couldn't retrieve all users.", ex);
             }
             finally
             {

@@ -1,5 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json;
 using SignalRChat.ErrorControl.Utilities;
 using SignalRChat.Site.Domain.Entities;
 using SignalRChat.Site.ServiceLibrary.Services.Contracts;
@@ -21,10 +24,23 @@ namespace SignalRChat.Site.WebApi.Controllers
             this.iUserService = Guard.ArgumentNotNullAndReturn(iUserService, "iUserService");
         }
 
-        public ActionResult Index(int senderId, int receiverId)
+        public ActionResult Index(int receiverId)
         {
+            var senderId = this.GetUserId();
             var model = this.GetModel(senderId, receiverId);
             return View(model);
+        }
+
+        private int GetUserId()
+        {
+            var loggedUserCookie = HttpContext.Request.Cookies.Get("loggedUser");
+            if (loggedUserCookie == null)
+            {
+                throw new Exception("Unexisting loggedUser cookie");
+            }
+            var decodedUserCookie = Uri.UnescapeDataString(loggedUserCookie.Value);
+            var loggedUser = JsonConvert.DeserializeObject<User>(decodedUserCookie);
+            return loggedUser.Id;
         }
 
         private ChatModel GetModel(int senderId, int receiverId)

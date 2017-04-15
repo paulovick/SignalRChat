@@ -1,0 +1,7 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\bin\Debug\SignalRChat.Site.Domain.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\bin\Debug\SignalRChat.Site.Domain.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\bin\Debug\SignalRChat.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\bin\Debug\SignalRChat.Data.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\obj\Debug\SignalRChat.Site.Domain.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\obj\Debug\SignalRChat.Site.Domain.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.Domain\obj\Debug\SignalRChat.Site.Domain.pdb

@@ -1,0 +1,4 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\bin\Release\SignalRChat.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\bin\Release\SignalRChat.Data.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\obj\Release\SignalRChat.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Data\obj\Release\SignalRChat.Data.pdb

@@ -1,0 +1,15 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Site.DataAccess.MariaDB.dll.config
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Site.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Site.DataAccess.MariaDB.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\Autofac.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\MySql.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.ErrorControl.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Site.Domain.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Data.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.ErrorControl.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Site.Domain.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\Autofac.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\obj\Debug\SignalRChat.Site.DataAccess.MariaDB.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\obj\Debug\SignalRChat.Site.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\obj\Debug\SignalRChat.Site.DataAccess.MariaDB.pdb

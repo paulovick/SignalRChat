@@ -1,0 +1,35 @@
+﻿@model SignalRChat.Site.WebApi.Models.ChatModel
+@{
+    ViewBag.Title = "Chat";
+}
+
+<h2>Chat</h2>
+
+<div class="container">
+    <ul id="discussion">
+        @foreach (var message in Model.Messages)
+        {
+            <li><strong>@message.SenderName</strong>: @message.ChatMessage.Message</li>
+        }
+    </ul>
+    <input type="text" id="message" />
+    <input type="button" id="sendmessage" value="Send" />
+    <input type="hidden" id="displayname" />
+</div>
+
+@section scripts {
+
+    <script>
+        var chatHub = new SignalRChat.Class.ChatHub();
+        var chatHubJson = {
+            DiscussionContainerId: "discussion",
+            InputContainerId: "message",
+            SendButtonId: "sendmessage",
+            Sender: @Html.Raw(Json.Encode(Model.Sender)),
+            Receiver: @Html.Raw(Json.Encode(Model.Receiver)),
+            Chat: @Html.Raw(Json.Encode(Model.Chat)),
+            Messages: @Html.Raw(Json.Encode(Model.Messages.Select(x => x.ChatMessage)))
+        };
+        chatHub.init(chatHubJson);
+    </script>
+}

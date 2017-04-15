@@ -1,0 +1,13 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.Site.ServiceLibrary.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.Site.ServiceLibrary.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\Autofac.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\Autofac.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\obj\Release\SignalRChat.Site.ServiceLibrary.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\obj\Release\SignalRChat.Site.ServiceLibrary.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\obj\Release\SignalRChat.Site.ServiceLibrary.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.ErrorControl.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.Site.Domain.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.Data.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.ErrorControl.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.ServiceLibrary\bin\Release\SignalRChat.Site.Domain.pdb

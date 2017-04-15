@@ -13,6 +13,7 @@ using SignalRChat.Site.WebApi.Models.Responses;
 namespace SignalRChat.Site.WebApi.Controllers
 {
     [SignalRChatAuthorize]
+    [RoutePrefix("chat")]
     public class ChatController : Controller
     {
         private readonly IChatService iChatService;
@@ -24,6 +25,7 @@ namespace SignalRChat.Site.WebApi.Controllers
             this.iUserService = Guard.ArgumentNotNullAndReturn(iUserService, "iUserService");
         }
 
+        [Route("{receiverId}")]
         public ActionResult Index(int receiverId)
         {
             var senderId = this.GetUserId();

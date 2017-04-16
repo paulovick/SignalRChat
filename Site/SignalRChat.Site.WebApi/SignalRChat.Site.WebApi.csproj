@@ -202,7 +202,6 @@
     <Content Include="Scripts\app\signalrchat-class-base.js" />
     <Content Include="Scripts\app\signalrchat-class-cookieManager.js" />
     <Content Include="Scripts\app\signalrchat-class-login.js" />
-    <Content Include="Scripts\app\signalrchat-class-chathub.js" />
     <Content Include="Scripts\app\signalrchat-class-register.js" />
     <Content Include="Scripts\app\signalrchat-init.js" />
     <Content Include="Scripts\app\signalrchat-util.js" />

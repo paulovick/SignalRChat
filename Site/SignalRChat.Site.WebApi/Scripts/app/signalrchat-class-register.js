@@ -26,6 +26,7 @@
         _this.setVars = function () {
             cookieManager = SignalRChat.Class.Singleton.CookieManager.getInstance();
 
+            emailInput = SignalRChat.Util.getJQueryObjectById(_this.EmailInputId);
             usernameInput = SignalRChat.Util.getJQueryObjectById(_this.UsernameInputId);
             passwordInput = SignalRChat.Util.getJQueryObjectById(_this.PasswordInputId);
             submitButton = SignalRChat.Util.getJQueryObjectById(_this.SubmitButtonId);

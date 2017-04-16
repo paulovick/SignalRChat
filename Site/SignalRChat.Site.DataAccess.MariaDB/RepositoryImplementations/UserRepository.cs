@@ -62,7 +62,7 @@ namespace SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations
                 this.OpenConnection();
 
                 var query = "INSERT INTO User(Email, Username, Password, CreatedAt, LastModifiedAt) VALUES (" +
-                            $"{user.Email}, {user.Username}, {user.Password}, {user.CreatedAd}, {user.LastModifiedAt});";
+                            $"'{user.Email}', '{user.Username}', '{user.Password}', '{user.CreatedAd}', '{user.LastModifiedAt}');";
                 this.ExecuteNonQuery(query);
             }
             catch (Exception ex)

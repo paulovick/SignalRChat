@@ -1,49 +1,88 @@
-﻿@{
-    ViewBag.Title = "Sign in";
+﻿@using Microsoft.Practices.ServiceLocation
+@using SignalRChat.Site.WebApi.Configuration
+@{
+    Layout = null;
+
+    var iSiteConfiguration = ServiceLocator.Current.GetInstance<ISiteConfiguration>();
 }
 
-<h2>Chat</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - SignalRChat</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container body-content">
+        <h2>Chat</h2>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>Sign up</h1>
-            <p>Please, sign up to our system in order to use all the services!</p>
+        <div class="container">
             <div class="row">
-                <input id="register-username" placeholder="Username" />
-            </div>
-            <div class="row">
-                <input id="register-password" placeholder="Password" type="password" />
-            </div>
-            <div class="row">
-                <input id="register-email" placeholder="Email" type="email" />
-            </div>
+                <div class="col-md-6">
+                    <h1>Sign up</h1>
+                    <p>Please, sign up to our system in order to use all the services!</p>
+                    <div class="row">
+                        <input id="register-username" placeholder="Username" />
+                    </div>
+                    <div class="row">
+                        <input id="register-password" placeholder="Password" type="password" />
+                    </div>
+                    <div class="row">
+                        <input id="register-email" placeholder="Email" type="email" />
+                    </div>
 
-            <button id="register-button" class="btn btn-primary">Submit</button>
-        </div>
-        <div class="col-md-6">
-            <h1>Sign in</h1>
-            <p>Already a user? Enter your credentials</p>
-            <div class="row">
-                <input id="login-username" placeholder="Username" />
+                    <button id="register-button" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-md-6">
+                    <h1>Sign in</h1>
+                    <p>Already a user? Enter your credentials</p>
+                    <div class="row">
+                        <input id="login-username" placeholder="Username" />
+                    </div>
+                    <div class="row">
+                        <input id="login-password" placeholder="Password" type="password" />
+                    </div>
+                    <div class="row">
+                        <div id="login-error" class="login-error-message signalr-hide">
+                            There was an error logging in. Please, check your credentials and try again.
+                        </div>
+                    </div>
+                    <button id="login-button" class="btn btn-primary">Sign in</button>
+                </div>
             </div>
-            <div class="row">
-                <input id="login-password" placeholder="Password" type="password" />
-            </div>
-            
-            <button id="login-button" class="btn btn-primary">Sign in</button>
         </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
     </div>
-</div>
 
-@section scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/js.cookie.js"></script>
+
+    <script src="~/Scripts/app/signalrchat-init.js"></script>
+    <script src="~/Scripts/app/signalrchat-util.js"></script>
+    <script src="~/Scripts/app/signalrchat-class-base.js"></script>
+    <script src="~/Scripts/app/signalrchat-class-cookieManager.js"></script>
+    <script src="~/Scripts/app/signalrchat-class-chat.js"></script>
+    <script src="~/Scripts/app/signalrchat-class-login.js"></script>
+    <script src="~/Scripts/app/signalrchat-class-register.js"></script>
+
     <script>
         var register = new SignalRChat.Class.Register();
         var registerJson = {
             EmailInputId: "register-email",
             UsernameInputId: "register-username",
             PasswordInputId: "register-password",
-            SubmitButtonId: "register-button"
+            SubmitButtonId: "register-button",
+            SiteBaseUrl: "@Html.Raw(iSiteConfiguration.SiteBaseUrl)"
         };
         register.init(registerJson);
 
@@ -51,8 +90,12 @@
         var loginJson = {
             UsernameInputId: "login-username",
             PasswordInputId: "login-password",
-            SubmitButtonId: "login-button"
+            SubmitButtonId: "login-button",
+            ErrorMessageId: "login-error",
+            SiteBaseUrl: "@Html.Raw(iSiteConfiguration.SiteBaseUrl)"
         };
         login.init(loginJson);
     </script>
-}
+
+</body>
+</html>

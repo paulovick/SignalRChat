@@ -13,3 +13,10 @@
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\obj\Debug\SignalRChat.Site.DataAccess.MariaDB.csprojResolveAssemblyReference.cache
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\obj\Debug\SignalRChat.Site.DataAccess.MariaDB.dll
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\obj\Debug\SignalRChat.Site.DataAccess.MariaDB.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.DataAccess.MariaDB.pdb

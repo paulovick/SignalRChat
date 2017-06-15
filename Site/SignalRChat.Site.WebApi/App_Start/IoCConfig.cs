@@ -6,6 +6,7 @@ using Autofac.Extras.CommonServiceLocator;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.SignalR;
 using Microsoft.Practices.ServiceLocation;
+using SignalRChat.Site.WebApi.Configuration;
 using SignalRChat.Site.WebApi.Mappers.Contracts;
 using SignalRChat.Site.WebApi.Mappers.Implementations;
 using AutofacDependencyResolver = Autofac.Integration.Mvc.AutofacDependencyResolver;
@@ -24,6 +25,8 @@ namespace SignalRChat.Site.WebApi.App_Start
             var modules = new List<Autofac.Module>
             {
                 new SignalRChat.Utilities.IoC.IoCModule(),
+                new SignalRChat.Configuration.DataAccess.MariaDB.IoC.IoCModule(),
+                new SignalRChat.Configuration.IoC.IoCModule(),
                 new SignalRChat.Site.ServiceLibrary.IoC.IoCModule(),
                 new SignalRChat.Site.DataAccess.MariaDB.IoC.IoCModule()
             };
@@ -42,6 +45,7 @@ namespace SignalRChat.Site.WebApi.App_Start
 
         private static void RegisterSelfTypes(ContainerBuilder builder)
         {
+            builder.RegisterType<SiteConfiguration>().As<ISiteConfiguration>();
             builder.RegisterType<UserRequestMapper>().As<IUserRequestMapper>();
         }
 

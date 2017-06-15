@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.DataAccess.MariaDB.dll.config
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Debug\SignalRChat.Configuration.DataAccess.MariaDB.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Debug\Autofac.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Debug\MySql.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Debug\Autofac.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\obj\Debug\SignalRChat.Configuration.DataAccess.MariaDB.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\obj\Debug\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\obj\Debug\SignalRChat.Configuration.DataAccess.MariaDB.pdb

@@ -1,0 +1,8 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Release\SignalRChat.Utilities.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Release\SignalRChat.Utilities.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Release\Autofac.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Release\Newtonsoft.Json.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Release\Autofac.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\bin\Release\Newtonsoft.Json.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\obj\Release\SignalRChat.Utilities.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Utilities\obj\Release\SignalRChat.Utilities.pdb

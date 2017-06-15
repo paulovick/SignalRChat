@@ -2,6 +2,7 @@
 using System.Web.Mvc;
 using SignalRChat.ErrorControl.Utilities;
 using SignalRChat.Site.ServiceLibrary.Services.Contracts;
+using SignalRChat.Site.WebApi.Configuration;
 using SignalRChat.Site.WebApi.Custom.Filters.Authorization;
 using SignalRChat.Site.WebApi.Models;
 using SignalRChat.Utilities.Session.Services;
@@ -14,7 +15,8 @@ namespace SignalRChat.Site.WebApi.Controllers
         private readonly ISessionManager iSessionManager;
         private readonly IUserService iUserService;
 
-        public HomeController(ISessionManager iSessionManager, IUserService iUserService)
+        public HomeController(ISessionManager iSessionManager,
+                                IUserService iUserService)
         {
             this.iSessionManager = Guard.ArgumentNotNullAndReturn(iSessionManager, "iSessionManager");
             this.iUserService = Guard.ArgumentNotNullAndReturn(iUserService, "iUserService");

@@ -77,3 +77,13 @@
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\Autofac.Integration.SignalR.xml
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\Microsoft.Practices.ServiceLocation.pdb
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\Microsoft.Practices.ServiceLocation.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Utilities.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\System.Web.Http.WebHost.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Utilities.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\System.Web.Http.WebHost.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.DataAccess.MariaDB.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\obj\Release\SignalRChat.Site.WebApi.Properties.Resources.resources
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\obj\Release\SignalRChat.Site.WebApi.csproj.GenerateResource.Cache

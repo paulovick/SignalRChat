@@ -81,3 +81,9 @@
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\Antlr3.Runtime.pdb
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\obj\Debug\SignalRChat.Site.WebApi.dll
 \\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\obj\Debug\SignalRChat.Site.WebApi.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\obj\Debug\SignalRChat.Site.WebApi.Properties.Resources.resources
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\obj\Debug\SignalRChat.Site.WebApi.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Site\SignalRChat.Site.WebApi\bin\SignalRChat.Configuration.DataAccess.MariaDB.pdb

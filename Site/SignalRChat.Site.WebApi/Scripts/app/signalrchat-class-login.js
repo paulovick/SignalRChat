@@ -7,6 +7,8 @@
         _this.UsernameInputId = "";
         _this.PasswordInputId = "";
         _this.SubmitButtonId = "";
+        _this.ErrorMessageId = "";
+        _this.SiteBaseUrl = "";
         // End JSON Properties
 
         var cookieManager = null;
@@ -14,6 +16,7 @@
         var usernameInput = null;
         var passwordInput = null;
         var submitButton = null;
+        var errorMessageContainer = null;
 
         _this.init = function(json) {
             _this.setSettingsByObject(json);
@@ -27,6 +30,7 @@
             usernameInput = SignalRChat.Util.getJQueryObjectById(_this.UsernameInputId);
             passwordInput = SignalRChat.Util.getJQueryObjectById(_this.PasswordInputId);
             submitButton = SignalRChat.Util.getJQueryObjectById(_this.SubmitButtonId);
+            errorMessageContainer = SignalRChat.Util.getJQueryObjectById(_this.ErrorMessageId);
         };
 
         _this.addEvents = function() {
@@ -38,14 +42,18 @@
                 Username: usernameInput.val(),
                 Password: passwordInput.val()
             };
+            var loginEndpoint = _this.SiteBaseUrl + "api/loginManager/login";
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:50276/api/loginManager/login',
+                url: loginEndpoint,
                 data: loginRequest,
                 success: onLoginSuccess,
                 error: onLoginError,
                 dataType: 'json'
             });
+
+            submitButton.html('Logging... ');
+            submitButton.append($('<i class="fa fa-spinner fa-pulse fa-fw"></i>'));
         };
 
         var onLoginSuccess = function (response) {
@@ -57,7 +65,11 @@
         };
 
         var onLoginError = function() {
-            console.log("Login error");
+            submitButton.html("Sign in");
+            errorMessageContainer.toggleClass("signalr-hide");
+            setTimeout(function() {
+                errorMessageContainer.toggleClass("signalr-hide");
+            }, 3000);
         };
 
         return _this;

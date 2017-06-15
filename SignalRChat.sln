@@ -37,6 +37,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Utilities", "Framework\SignalRChat.Utilities\SignalRChat.Utilities.csproj", "{81A392DE-8A64-426A-90A7-5B4931280DF0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{223883D4-5BE7-4D32-B42B-7CACECE3576A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Configuration", "Framework\SignalRChat.Configuration\SignalRChat.Configuration.csproj", "{1E5E221F-238E-4AEA-B421-70909D01EB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Configuration.DataAccess.MariaDB", "Framework\SignalRChat.Configuration.DataAccess.MariaDB\SignalRChat.Configuration.DataAccess.MariaDB.csproj", "{C42EF6F7-8F80-40D1-B90D-16DF31054E1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +77,14 @@ Global
 		{81A392DE-8A64-426A-90A7-5B4931280DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81A392DE-8A64-426A-90A7-5B4931280DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81A392DE-8A64-426A-90A7-5B4931280DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5E221F-238E-4AEA-B421-70909D01EB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5E221F-238E-4AEA-B421-70909D01EB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5E221F-238E-4AEA-B421-70909D01EB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5E221F-238E-4AEA-B421-70909D01EB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42EF6F7-8F80-40D1-B90D-16DF31054E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42EF6F7-8F80-40D1-B90D-16DF31054E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42EF6F7-8F80-40D1-B90D-16DF31054E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42EF6F7-8F80-40D1-B90D-16DF31054E1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,5 +105,8 @@ Global
 		{F8A2D9EF-890F-4B52-A9FF-BD279F467A10} = {076F8E26-6A86-4B1C-B0A7-2C90A102841A}
 		{F13A2999-C19F-49A2-85F5-6D80222E93FD} = {D17E2ED5-10BC-4A97-A252-B4E0AB8B5CDA}
 		{81A392DE-8A64-426A-90A7-5B4931280DF0} = {F13A2999-C19F-49A2-85F5-6D80222E93FD}
+		{223883D4-5BE7-4D32-B42B-7CACECE3576A} = {D17E2ED5-10BC-4A97-A252-B4E0AB8B5CDA}
+		{1E5E221F-238E-4AEA-B421-70909D01EB12} = {223883D4-5BE7-4D32-B42B-7CACECE3576A}
+		{C42EF6F7-8F80-40D1-B90D-16DF31054E1D} = {223883D4-5BE7-4D32-B42B-7CACECE3576A}
 	EndGlobalSection
 EndGlobal

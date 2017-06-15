@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using SignalRChat.Site.DataAccess.MariaDB.Configuration;
 using SignalRChat.Site.DataAccess.MariaDB.Mappers.Contracts;
 using SignalRChat.Site.DataAccess.MariaDB.Mappers.Implementations;
 using SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations;
@@ -10,8 +11,14 @@ namespace SignalRChat.Site.DataAccess.MariaDB.IoC
     {
         protected override void Load(ContainerBuilder builder)
         {
+            this.RegisterConfigurations(builder);
             this.RegisterRepositories(builder);
             this.RegisterMappers(builder);
+        }
+
+        private void RegisterConfigurations(ContainerBuilder builder)
+        {
+            builder.RegisterType<SiteInfrastructureConfiguration>().As<ISiteInfrastructureConfiguration>();
         }
 
         private void RegisterRepositories(ContainerBuilder builder)

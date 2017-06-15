@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using SignalRChat.Site.DataAccess.MariaDB.Mappers.Contracts;
 using SignalRChat.Site.Domain.Entities;
 using SignalRChat.Site.Domain.RepositoryContracts;
@@ -60,9 +59,9 @@ namespace SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations
             try
             {
                 this.OpenConnection();
-
+                
                 var query = "INSERT INTO User(Email, Username, Password, CreatedAt, LastModifiedAt) VALUES (" +
-                            $"'{user.Email}', '{user.Username}', '{user.Password}', '{user.CreatedAd}', '{user.LastModifiedAt}');";
+                            $"'{user.Email}', '{user.Username}', '{user.Password}', '{DateTime.Now}', '{DateTime.Now}');";
                 this.ExecuteNonQuery(query);
             }
             catch (Exception ex)

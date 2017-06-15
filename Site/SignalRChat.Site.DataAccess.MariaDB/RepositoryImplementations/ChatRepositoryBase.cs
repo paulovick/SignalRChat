@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using Microsoft.Practices.ServiceLocation;
 using MySql.Data.MySqlClient;
 using SignalRChat.ErrorControl.Utilities;
+using SignalRChat.Site.DataAccess.MariaDB.Configuration;
 using SignalRChat.Site.DataAccess.MariaDB.Mappers.Contracts;
 
 namespace SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations
@@ -8,20 +10,21 @@ namespace SignalRChat.Site.DataAccess.MariaDB.RepositoryImplementations
     public class ChatRepositoryBase<T>
     {
         private readonly IChatMapperBase<T> iChatMapper;
+        private readonly ISiteInfrastructureConfiguration iSiteInfrastructureConfiguration;
 
         private readonly MySqlConnection Connection;
 
         public ChatRepositoryBase(IChatMapperBase<T> iChatMapper)
+            : this(iChatMapper, ServiceLocator.Current.GetInstance<ISiteInfrastructureConfiguration>())
+        {}
+
+        public ChatRepositoryBase(IChatMapperBase<T> iChatMapper,
+                                    ISiteInfrastructureConfiguration iSiteInfrastructureConfiguration)
         {
             this.iChatMapper = Guard.ArgumentNotNullAndReturn(iChatMapper, "iChatMapper");
-
-            var serverName = "signalr-chat-db.cuoz0vogfwqf.us-west-2.rds.amazonaws.com";
-            var database = "Chat-Dev";
-            var uid = "admin";
-            var password = "7rNwwKQE";
-
-            var connectionString = $"Server={serverName};Database={database};Uid={uid};Pwd={password}";
-            this.Connection = new MySqlConnection(connectionString);
+            this.iSiteInfrastructureConfiguration = Guard.ArgumentNotNullAndReturn(iSiteInfrastructureConfiguration, "iSiteInfrastructureConfiguration");
+            
+            this.Connection = new MySqlConnection(this.iSiteInfrastructureConfiguration.ChatConnectionString);
         }
 
         protected void OpenConnection()

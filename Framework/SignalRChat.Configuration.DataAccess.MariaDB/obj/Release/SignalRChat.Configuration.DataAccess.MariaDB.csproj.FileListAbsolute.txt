@@ -1,0 +1,8 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Release\SignalRChat.Configuration.DataAccess.MariaDB.dll.config
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Release\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Release\SignalRChat.Configuration.DataAccess.MariaDB.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Release\Autofac.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Release\MySql.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\bin\Release\Autofac.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\obj\Release\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration.DataAccess.MariaDB\obj\Release\SignalRChat.Configuration.DataAccess.MariaDB.pdb

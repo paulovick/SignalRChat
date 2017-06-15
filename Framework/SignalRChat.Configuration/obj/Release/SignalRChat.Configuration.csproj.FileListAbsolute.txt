@@ -1,0 +1,15 @@
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.Configuration.dll.config
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.Configuration.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.Configuration.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\Autofac.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\MySql.Data.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.Configuration.DataAccess.MariaDB.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.ErrorControl.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.Configuration.DataAccess.MariaDB.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\SignalRChat.ErrorControl.pdb
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\bin\Release\Autofac.xml
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\obj\Release\SignalRChat.Configuration.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\obj\Release\SignalRChat.Configuration.Properties.Resources.resources
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\obj\Release\SignalRChat.Configuration.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\obj\Release\SignalRChat.Configuration.dll
+\\Mac\Home\Documents\SignalR\SignalRChat\Framework\SignalRChat.Configuration\obj\Release\SignalRChat.Configuration.pdb

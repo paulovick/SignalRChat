@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.signalr-hide {
+    display: none;
+}
+
+.login-error-message {
+    background-color: #ff4500;
+    color: white;
+}

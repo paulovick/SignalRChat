@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using SignalRChat.ErrorControl.Utilities;
 using SignalRChat.Site.Domain.Entities;
 using SignalRChat.Site.ServiceLibrary.Services.Contracts;
+using SignalRChat.Site.WebApi.Configuration;
 using SignalRChat.Site.WebApi.Custom.Filters.Authorization;
 using SignalRChat.Site.WebApi.Mappers.Contracts;
 using SignalRChat.Site.WebApi.Models.Requests;
@@ -18,14 +19,17 @@ namespace SignalRChat.Site.WebApi.Controllers.Api
         private readonly IStringCipher iStringCipher;
         private readonly IUserService iUserService;
         private readonly IUserRequestMapper iUserRequestMapper;
+        private readonly ISiteConfiguration iSiteConfiguration;
 
         public LoginManagerController(IStringCipher iStringCipher,
                                         IUserService iUserService,
-                                        IUserRequestMapper iUserRequestMapper)
+                                        IUserRequestMapper iUserRequestMapper,
+                                        ISiteConfiguration iSiteConfiguration)
         {
             this.iStringCipher = Guard.ArgumentNotNullAndReturn(iStringCipher, "iStringCipher");
             this.iUserService = Guard.ArgumentNotNullAndReturn(iUserService, "iUserService");
             this.iUserRequestMapper = Guard.ArgumentNotNullAndReturn(iUserRequestMapper, "iUserRequestMapper");
+            this.iSiteConfiguration = Guard.ArgumentNotNullAndReturn(iSiteConfiguration, "iSiteConfiguration");
         }
 
         [HttpPost]
@@ -62,7 +66,7 @@ namespace SignalRChat.Site.WebApi.Controllers.Api
                 Token = token,
                 TokenExpiration = expirationDays,
                 User = user,
-                UriToRedirect = "http://localhost:50276/"
+                UriToRedirect = this.iSiteConfiguration.SiteBaseUrl
             };
             return result;
         }
